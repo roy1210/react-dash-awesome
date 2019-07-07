@@ -1,4 +1,6 @@
 import React, { Component } from "react";
+import { firestore } from "firebase";
+import { firebase } from "react-redux-firebase";
 import { connect } from "react-redux";
 import { signIn } from "../../store/actions/authActions";
 import { Redirect } from "react-router-dom";
@@ -30,7 +32,29 @@ class SignIn extends Component {
 
     return (
       <div className='container'>
-        <form onSubmit={this.handleSubmit} className='white'>
+        <div className='row' style={{ marginTop: "1em" }}>
+          <div className='card teal'>
+            <div className='card-content white-text'>
+              <span className='card-title'>It's great to see you!</span>
+              <p>
+                This is a simple project dashboard tool with authentication and
+                cloud functions.
+              </p>
+              <p>
+                It's made with React.js, Redux-thunk, Firebase, and Cloud
+                Firestore.
+              </p>
+              <p>
+                Please feel free to post any project or sign up to try this app.
+              </p>
+            </div>
+          </div>
+        </div>
+        <form
+          onSubmit={this.handleSubmit}
+          className='white'
+          style={{ marginTop: "0em" }}
+        >
           <h5 className='grey-text text-darken-3'>Login</h5>
           <div className='input-field'>
             <label htmlFor='email'>Email</label>
@@ -43,14 +67,13 @@ class SignIn extends Component {
           </div>
           <div className='input-field'>
             <button className='btn pink lighten-1 z-depth-0'>LOGIN</button>
-            <div className='black-text'>
-              <p>=Guest user=</p>
-              <p>Email: guest@user.com</p>
-              <p>Password: 123456</p>
-            </div>
+
             <div className='red-text center'>
               {authError ? <p>{authError}</p> : null}
             </div>
+            <p>=Guest user=</p>
+            <p>Email: guest@user.com</p>
+            <p>Password: 123456</p>
           </div>
         </form>
       </div>
