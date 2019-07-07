@@ -6,11 +6,11 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   /* background: url(/img/mario-bg.png) no-repeat; */
-  background: url(/img/background-blur-clean.jpg) no-repeat;
+  background: url(/img/background-blur-clean.jpg);
   /* background: url("https://img.wallpapersafari.com/desktop/1920/1080/18/47/JmvW7V.jpg") no-repeat; */
   background-size: 100%;
-  background-position: bottom;
-  /* background-color: #95e8f3; */
+  /* background-position: bottom; */
+  background-color: darkgreen;
   min-height: 100%;
 
 }
@@ -35,10 +35,14 @@ code {
 }
 
 /* change the color of forms when focus on */
-input[type=text]:not(.browser-default):focus:not([readonly]),
+/* input[type=text]:not(.browser-default):focus:not([readonly]),
 input[type=email]:not(.browser-default):focus:not([readonly]),
 input[type=password]:not(.browser-default):focus:not([readonly]),
 taxtarea.materiazlize-textarea:focus:not([readonly]) {
   border-color: tomato;
   box-shadow: none;
+} */
+
+.container {
+  opacity: 0.95;
 }

@@ -21,7 +21,7 @@ exports.projectCreated = functions.firestore // no (): because only ref to docum
   .onCreate(doc => {
     const project = doc.data();
     const notification = {
-      content: "Added a new PJ",
+      content: "Added a new project",
       user: `${project.authorFirstName} ${project.authorLastName}`,
       time: admin.firestore.FieldValue.serverTimestamp()
     };
@@ -38,7 +38,7 @@ exports.userJoined = functions.auth.user().onCreate(user => {
     .then(doc => {
       const newUser = doc.data();
       const notification = {
-        content: "Join the party",
+        content: "Has joined our team!",
         user: `${newUser.firstName} ${newUser.lastName}`,
         time: admin.firestore.FieldValue.serverTimestamp()
       };
