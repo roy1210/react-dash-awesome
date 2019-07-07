@@ -1,6 +1,4 @@
 import React, { Component } from "react";
-import { firestore } from "firebase";
-import { firebase } from "react-redux-firebase";
 import { connect } from "react-redux";
 import { signIn } from "../../store/actions/authActions";
 import { Redirect } from "react-router-dom";
