@@ -26,6 +26,6 @@ Clone repo, install, cd into folder and run:
 ```
 1. `npm install`
 2. `firebase deploy`
-(or `firebase deploy only functions` if don't use hosting)
+   (or `firebase deploy only functions` if don't use hosting)
 3. `npm start`
 ```
