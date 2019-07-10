@@ -16,11 +16,17 @@ Simple project dashboard tool with authentication and cloud functions.
 - Firebase
 - Colud Firestore
 
+## Firebase Setup
+Make new project in firebase and copy your firebase SDK script into `src/config/fbConfig.js`
+
 ## Start App
 
 Clone repo, install, cd into folder and run:
 
 ```
-npm install
-npm start
+
+`npm install`
+`firebase deploy`
+(or `firebase deploy only functions` if don't use hosting)
+`npm start`
 ```
