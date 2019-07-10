@@ -1,10 +1,31 @@
 # DashAwesome
 
-![React_preview](./public/img/ScreenShot.jpg)
-
-## Introduction
+## Description
 
 Simple project dashboard tool with authentication and cloud functions.
+
+**_DEMO:_**
+
+<img src="./public/img/ScreenShot.jpg" width="80%">
+
+## Usage
+
+Make new project in firebase and copy your firebase SDK script into `src/config/fbConfig.js` (create new js file)
+
+## Install
+
+Clone repo, install, cd into folder and run:
+
+```console
+$ npm install
+$ firebase deploy
+  (or `firebase deploy only functions` if don't use hosting)
+$ npm start
+```
+
+## Requirement
+
+- npm
 
 ## Tools
 
@@ -16,16 +37,10 @@ Simple project dashboard tool with authentication and cloud functions.
 - Firebase
 - Colud Firestore
 
-## Firebase Setup
-Make new project in firebase and copy your firebase SDK script into `src/config/fbConfig.js`
+## Licence
 
-## Start App
+[MIT](./LICENSE.txt)
 
-Clone repo, install, cd into folder and run:
+## Author
 
-```
-1. `npm install`
-2. `firebase deploy`
-   (or `firebase deploy only functions` if don't use hosting)
-3. `npm start`
-```
+[Shoe Kure](https://github.com/roy1210)
