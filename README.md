@@ -24,9 +24,8 @@ Make new project in firebase and copy your firebase SDK script into `src/config/
 Clone repo, install, cd into folder and run:
 
 ```
-
-`npm install`
-`firebase deploy`
+1. `npm install`
+2. `firebase deploy`
 (or `firebase deploy only functions` if don't use hosting)
-`npm start`
+3. `npm start`
 ```
